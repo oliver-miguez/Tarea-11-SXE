@@ -1,0 +1,27 @@
+services:
+  web:
+    image: odoo:18
+    depends_on:
+      - mydb
+    ports:
+      - "8069:8069"
+    environment:
+      - HOST=mydb
+      - USER=odoo
+      - PASSWORD=myodoo
+  mydb:
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_PASSWORD=myodoo
+      - POSTGRES_USER=odoo
+
+  pgAdmin:
+    image: dpage/pgadmin4
+    depends_on:
+      - mydb
+    ports:
+      - "8080:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: omiguezalonso@danielcastelao.org
+      PGADMIN_DEFAULT_PASSWORD: admin
