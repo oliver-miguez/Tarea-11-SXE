@@ -1,3 +1,9 @@
+# PRIMER PASO
+## Pluguins intalados en el ide
+
+![PRIMERPASO](https://github.com/oliver-miguez/Tarea-11-SXE/blob/main/Tarea%2011%20imagenes/Captura%20desde%202025-11-14%2009-14-37.png)
+
+
 # Instalación Odoo
 
 Si nuestro archivo yaml está correctamente configurado 
